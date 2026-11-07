@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 /**
  * @title WarrantyGo
  * @notice Decentralized warranty registration and verification for electronics shops, gadget sellers, and small businesses.
- * @dev Deployed on Botchain Testnet (Chain ID: 968).
+ * @dev Deployed on Botchain Mainnet (Chain ID: 677).
  */
 contract WarrantyGo {
     enum Status {

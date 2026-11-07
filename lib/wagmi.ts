@@ -1,10 +1,10 @@
 import { http, createConfig } from "wagmi";
 import { injected } from "wagmi/connectors";
 import { createPublicClient } from "viem";
-import { botchain, botchainTestnet } from "./chains";
+import { botchain } from "./chains";
 
 export const config = createConfig({
-  chains: [botchain, botchainTestnet],
+  chains: [botchain],
   connectors: [
     injected({
       target: "metaMask",
@@ -12,7 +12,6 @@ export const config = createConfig({
   ],
   transports: {
     [botchain.id]: http(botchain.rpcUrls.default.http[0]),
-    [botchainTestnet.id]: http(botchainTestnet.rpcUrls.default.http[0]),
   },
   ssr: true,
 });

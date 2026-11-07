@@ -5,9 +5,11 @@
 ### Slide 1: Cover
 * **Title:** WarrantyGo 🛡️
 * **Subtitle:** Decentralized, Tamper-Proof Warranty Registration & Verification Protocol
-* **Built on:** Botchain Mainnet (Chain ID: 677)
+* **Built on:** BOT Chain (Chain ID: 677)
 * **Tagline:** *"Your warranty, always within reach."*
 * **Presenter:** WarrantyGo Team ([GitHub](https://github.com/liljhnxn/warrantygo))
+* **BOT Chain Website:** [https://botchain.ai](https://botchain.ai)
+* **BOT Chain Explorer:** [https://scan.botchain.ai](https://scan.botchain.ai)
 
 ---
 
@@ -21,7 +23,7 @@
 ---
 
 ### Slide 3: The Solution
-* **WarrantyGo on Botchain:**
+* **WarrantyGo on BOT Chain:**
   * **On-Chain Digital Certificates:** Permanent, immutable proof of warranty issuance.
   * **Zero-Wallet Customer Lookup:** Customers verify status via public RPC in seconds—no crypto wallet or account required.
   * **Automated Expiry State:** Smart contract natively resolves expired statuses with zero gas maintenance.
@@ -43,7 +45,7 @@
 
 ### Slide 5: Product Architecture & Tech Stack
 * **Smart Contracts:** Solidity `^0.8.24` (EVM Paris target, Hardhat, custom gas-efficient errors).
-* **Blockchain:** Botchain Testnet (Chain ID `968`, BohrScan Explorer).
+* **Blockchain:** BOT Chain (Chain ID `677`, BotScan Explorer).
 * **Frontend:** Next.js 14 App Router, TypeScript, Tailwind CSS (Dark Charcoal aesthetic).
 * **Web3 Integration:** Wagmi v2 + Viem public client for instant RPC querying without wallet friction.
 
@@ -77,19 +79,20 @@
 ---
 
 ### Slide 9: Roadmap
-* **Q4 2026 (Live):** Botchain Testnet deployment, verified contracts, public verification portal.
-* **Q1 2027:** Dynamic QR code generation for checkout receipt printing.
-* **Q2 2027:** Soulbound Token (SBT) digital warranty cards for buyers.
-* **Q3 2027:** POS plugins for Shopify, WooCommerce, and Square merchants.
+* **Phase 1 (Live):** BOT Chain mainnet deployment, verified contract, public verification portal.
+* **Phase 2 (Q1 2027):** Dynamic QR code generation for checkout receipt printing.
+* **Phase 3 (Q2 2027):** Soulbound Token (SBT) digital warranty cards for buyers.
+* **Phase 4 (Q3 2027):** POS plugins for Shopify, WooCommerce, and Square merchants.
 
 ---
 
 ### Slide 10: The Ask & Collaboration
-* **Botchain Ecosystem Co-Marketing:**
-  * Social spotlight on Botchain X/Telegram/Discord channels.
+* **BOT Chain Ecosystem Co-Marketing:**
+  * Social spotlight on BOT Chain X/Telegram/Discord channels.
   * Ecosystem directory inclusion.
   * Co-hosting community AMAs on real-world Web3 retail applications.
-* **Contact & Links:**
+* **Official Links:**
+  * **BOT Chain Website:** [https://botchain.ai](https://botchain.ai)
+  * **BOT Chain Explorer:** [https://scan.botchain.ai](https://scan.botchain.ai)
   * **App Repo:** [github.com/liljhnxn/warrantygo](https://github.com/liljhnxn/warrantygo)
-  * **Contract:** [scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B](https://scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B)
-
+  * **Contract:** [scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F](https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F)

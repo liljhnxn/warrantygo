@@ -2,9 +2,10 @@
 **A Decentralized, Tamper-Proof On-Chain Warranty Registry & Verification Protocol**
 
 *Version 1.0 — November 2026*  
-*Target Network: Botchain Mainnet (Chain ID: 677)*  
+*Target Network: BOT Chain (Chain ID: 677)*  
 *Smart Contract Address:* `0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F`  
-*Explorer:* [BotScan Contract](https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code)  
+*BOT Chain Website:* [https://botchain.ai](https://botchain.ai)  
+*BOT Chain Explorer:* [https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code](https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code)  
 
 ---
 
@@ -12,7 +13,7 @@
 
 Consumer electronics, mobile gadgets, and appliance retail represent a multi-hundred-billion-dollar global market. However, post-sale warranty management remains fundamentally broken. Retailers rely on thermal paper receipts that fade within months, fragile paper guarantee cards, or closed centralized databases vulnerable to data loss and disputes.
 
-**WarrantyGo** is a decentralized protocol built on **Botchain** that transforms physical product warranties into permanent, verifiable on-chain certificates. It enables electronics shops, gadget retailers, and independent merchants to issue immutable warranty records with custom terms and automated lifecycles. Crucially, **customers can instantly verify warranty authenticity and remaining coverage without creating an account, installing an app, or connecting a crypto wallet.**
+**WarrantyGo** is a decentralized protocol built on **BOT Chain** that transforms physical product warranties into permanent, verifiable on-chain certificates. It enables electronics shops, gadget retailers, and independent merchants to issue immutable warranty records with custom terms and automated lifecycles. Crucially, **customers can instantly verify warranty authenticity and remaining coverage without creating an account, installing an app, or connecting a crypto wallet.**
 
 ---
 
@@ -59,8 +60,8 @@ WarrantyGo bridges retail commerce and Web3 infrastructure by providing:
              |                                     |
              v                                     v
 +-----------------------------------------------------------------+
-|                       BOTCHAIN TESTNET                          |
-|             (Chain ID: 968 | RPC: https://rpc.bohr.life)         |
+|                           BOT CHAIN                             |
+|             (Chain ID: 677 | RPC: https://rpc.botchain.ai)      |
 |                                                                 |
 |   +---------------------------------------------------------+   |
 |   |                   WarrantyGo.sol                        |   |
@@ -114,18 +115,18 @@ Rather than consuming storage for verbose revert strings, WarrantyGo utilizes EV
 
 ---
 
-## 6. Synergy with Botchain Ecosystem
+## 6. Synergy with BOT Chain Ecosystem
 
-Botchain provides the ideal high-throughput, low-latency trust rail for WarrantyGo:
+BOT Chain provides the ideal high-throughput, low-latency trust rail for WarrantyGo:
 * **Sub-Cent Gas Fees:** Retailers can issue thousands of warranty certificates with negligible operational overhead.
 * **EVM Compatibility:** Seamless integration with standard tooling (Hardhat, Viem, Wagmi, MetaMask).
-* **AI Agent Readiness:** Future AI warranty agents can autonomously verify and approve repair claims using BohrScan API endpoints.
+* **AI Agent Readiness:** Future AI warranty agents can autonomously verify and approve repair claims using BotScan API endpoints.
 
 ---
 
 ## 7. Roadmap
 
-* **Phase 1 (Completed):** Smart contract deployment on Botchain Testnet, complete unit test coverage, and responsive Next.js frontend with zero-wallet public verification.
+* **Phase 1 (Completed):** Smart contract deployment on BOT Chain, complete unit test coverage, and responsive Next.js frontend with zero-wallet public verification.
 * **Phase 2 (Q1 2027):** QR Code generation on registration receipts for instant in-store scanning at checkout.
 * **Phase 3 (Q2 2027):** Optional Soulbound NFT / ERC-721 digital warranty card claimable by the buyer.
 * **Phase 4 (Q3 2027):** Merchant POS (Point of Sale) SDK plugins for Shopify, WooCommerce, and Square.
@@ -136,3 +137,5 @@ Botchain provides the ideal high-throughput, low-latency trust rail for Warranty
 
 WarrantyGo demonstrates how decentralized ledger technology directly solves tangible retail pain points. By eliminating paper waste, preventing warranty fraud, and prioritizing customer privacy, WarrantyGo establishes a new benchmark for post-purchase trust and transparency.
 
+* **BOT Chain Website:** [https://botchain.ai](https://botchain.ai)
+* **BOT Chain Explorer:** [https://scan.botchain.ai](https://scan.botchain.ai)

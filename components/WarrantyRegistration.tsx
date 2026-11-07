@@ -150,7 +150,7 @@ export function WarrantyRegistration({ onSuccessRegistered }: WarrantyRegistrati
           <span>Register New Warranty</span>
         </h2>
         <p className="text-sm text-zinc-400 mt-1">
-          Issue an immutable on-chain warranty certificate stored permanently on Botchain Testnet.
+          Issue an immutable on-chain warranty certificate stored permanently on Botchain.
         </p>
       </div>
 

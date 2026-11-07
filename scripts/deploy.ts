@@ -9,7 +9,7 @@ async function main() {
   const chainId = Number(network.chainId);
 
   console.log("====================================================");
-  console.log("🚀 Deploying WarrantyGo contract...");
+  console.log("🚀 Deploying WarrantyGo contract to Botchain...");
   console.log(`👤 Deployer Address: ${deployer.address}`);
   console.log(`🌐 Network: ${network.name} (Chain ID: ${chainId})`);
 
@@ -20,7 +20,7 @@ async function main() {
   const gasPrice = feeData.gasPrice || 20000000000n;
   console.log(`⛽ Current Gas Price: ${ethers.formatUnits(gasPrice, "gwei")} Gwei`);
 
-  const explorerBase = chainId === 677 ? "https://scan.botchain.ai" : "https://scan.bohr.life";
+  const explorerBase = "https://scan.botchain.ai";
 
   console.log("📦 Creating contract factory...");
   const WarrantyGoFactory = await ethers.getContractFactory("WarrantyGo");
@@ -47,7 +47,7 @@ async function main() {
   }
 
   console.log("====================================================");
-  console.log(`🎉 WarrantyGo successfully deployed to ${chainId === 677 ? "MAINNET" : "TESTNET"}!`);
+  console.log(`🎉 WarrantyGo successfully deployed!`);
   console.log(`📍 Contract Address: ${contractAddress}`);
   if (deploymentTx) {
     console.log(`📜 Tx Hash: ${deploymentTx.hash}`);
@@ -62,7 +62,7 @@ async function main() {
   const deployedConfig = {
     contractAddress,
     chainId,
-    networkName: chainId === 677 ? "botchainMainnet" : network.name,
+    networkName: "botchain",
     explorerUrl: `${explorerBase}/address/${contractAddress}`,
     deploymentTx: deploymentTx ? deploymentTx.hash : null,
     deployedAt: new Date().toISOString(),

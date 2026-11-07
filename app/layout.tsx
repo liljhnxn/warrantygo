@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "WarrantyGo | On-Chain Warranty Registration & Lookup",
   description:
-    "Decentralized, immutable warranty registration and verification on Botchain Testnet. Verify gadget and electronics warranties instantly.",
+    "Decentralized, immutable warranty registration and verification on Botchain. Verify gadget and electronics warranties instantly.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { WarrantyLookup } from "@/components/WarrantyLookup";
 import { WarrantyRegistration } from "@/components/WarrantyRegistration";
 import { MyWarranties } from "@/components/MyWarranties";
-import { ShieldCheck, Search, PlusCircle, ExternalLink, Cpu, Sparkles } from "lucide-react";
+import { ShieldCheck, Search, PlusCircle, ExternalLink, Globe, Compass, Cpu, Layers } from "lucide-react";
 import { useAccount } from "wagmi";
 
 export default function Home() {
@@ -26,9 +26,9 @@ export default function Home() {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-charcoal-900 border border-charcoal-800 text-xs text-zinc-400 mb-4 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
-            <span className="text-brand-green font-medium">Botchain Mainnet (Chain ID: 677)</span>
+            <span className="text-brand-green font-medium">Powered by BOT Chain (Chain ID: 677)</span>
             <span className="text-zinc-600">•</span>
-            <span className="text-brand-purple-light font-medium">Smart Contract v1.0</span>
+            <span className="text-brand-purple-light font-medium">Verified Contract v1.0</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
@@ -40,11 +40,11 @@ export default function Home() {
 
           <p className="text-sm sm:text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto">
             A simple, transparent Web3 warranty management protocol for electronics retailers,
-            phone vendors, and customers. Immutable proof of purchase and warranty coverage on-chain.
+            phone vendors, and customers. Immutable proof of purchase and warranty coverage on BOT Chain.
           </p>
         </div>
 
-        {/* Tab Selection Switcher (Mobile & Fast Navigation) */}
+        {/* Tab Selection Switcher */}
         <div className="flex justify-center mb-8">
           <div className="bg-charcoal-900 border border-charcoal-800 p-1 rounded-xl inline-flex shadow-inner">
             <button
@@ -91,36 +91,93 @@ export default function Home() {
             </div>
           )}
         </div>
+
+        {/* BOT Chain Ecosystem Card Section */}
+        <div className="max-w-4xl mx-auto mt-14 bg-charcoal-900/70 border border-charcoal-800 rounded-2xl p-6 sm:p-7 shadow-lg">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-center space-x-3.5">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-purple to-brand-green flex items-center justify-center shadow-md">
+                <Cpu className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="text-base font-bold text-white flex items-center space-x-2">
+                  <span>BOT Chain Ecosystem</span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-charcoal-800 text-brand-green border border-brand-green/30">
+                    Chain ID 677
+                  </span>
+                </h3>
+                <p className="text-xs text-zinc-400 mt-0.5">
+                  WarrantyGo smart contracts and verification queries run on high-performance BOT Chain rails.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-3 w-full sm:w-auto">
+              <a
+                href="https://botchain.ai"
+                target="_blank"
+                rel="noreferrer"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center space-x-1.5 px-4 py-2 rounded-xl bg-charcoal-850 hover:bg-charcoal-800 border border-charcoal-700 text-xs font-medium text-zinc-200 hover:text-white transition"
+              >
+                <Globe className="w-3.5 h-3.5 text-brand-purple-light" />
+                <span>BOT Chain Website</span>
+                <ExternalLink className="w-3 h-3 text-zinc-500" />
+              </a>
+
+              <a
+                href="https://scan.botchain.ai"
+                target="_blank"
+                rel="noreferrer"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center space-x-1.5 px-4 py-2 rounded-xl bg-charcoal-850 hover:bg-charcoal-800 border border-charcoal-700 text-xs font-medium text-zinc-200 hover:text-white transition"
+              >
+                <Compass className="w-3.5 h-3.5 text-brand-green" />
+                <span>BOT Chain Explorer</span>
+                <ExternalLink className="w-3 h-3 text-zinc-500" />
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-charcoal-800/80 bg-charcoal-900/60 py-8 mt-16 text-xs text-zinc-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center space-x-2">
+      <footer className="border-t border-charcoal-800/80 bg-charcoal-900/60 py-8 mt-16 text-xs text-zinc-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center space-x-2.5">
             <ShieldCheck className="w-4 h-4 text-brand-purple-light" />
-            <span className="font-medium text-zinc-400">WarrantyGo Protocol</span>
-            <span>—</span>
-            <span className="text-brand-green">Live on Botchain Mainnet (677)</span>
+            <span className="font-semibold text-white">WarrantyGo Protocol</span>
+            <span>•</span>
+            <span className="text-zinc-400">Built on BOT Chain</span>
+            <a
+              href="https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[11px] font-mono text-brand-green hover:underline ml-1"
+            >
+              (0x11F0...D56F)
+            </a>
           </div>
 
-          <div className="flex items-center space-x-6 text-zinc-400">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-zinc-300">
+            <a
+              href="https://botchain.ai"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-white transition flex items-center space-x-1.5"
+            >
+              <Globe className="w-3.5 h-3.5 text-brand-purple-light" />
+              <span>BOT Chain Website: https://botchain.ai</span>
+              <ExternalLink className="w-3 h-3 text-zinc-500" />
+            </a>
+
             <a
               href="https://scan.botchain.ai"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-white transition flex items-center space-x-1"
+              className="hover:text-white transition flex items-center space-x-1.5"
             >
-              <span>BotScan Explorer</span>
-              <ExternalLink className="w-3 h-3" />
-            </a>
-            <a
-              href="https://rpc.botchain.ai"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-white transition flex items-center space-x-1"
-            >
-              <span>RPC Node</span>
-              <ExternalLink className="w-3 h-3" />
+              <Compass className="w-3.5 h-3.5 text-brand-green" />
+              <span>BOT Chain Explorer: https://scan.botchain.ai</span>
+              <ExternalLink className="w-3 h-3 text-zinc-500" />
             </a>
           </div>
         </div>
@@ -128,4 +185,3 @@ export default function Home() {
     </div>
   );
 }
-
