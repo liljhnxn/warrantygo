@@ -45,8 +45,9 @@ export function Header() {
               <span className="text-xl font-bold tracking-tight text-zinc-100">
                 Warranty<span className="text-brand-purple-light">Go</span>
               </span>
-              <span className="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full bg-charcoal-800 text-brand-green border border-brand-green/30">
-                Botchain 677
+              <span className="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full bg-charcoal-800 text-brand-green border border-brand-green/30 inline-flex items-center space-x-1">
+                <img src="/botchain-logo.png" alt="BOT Chain" className="w-3 h-3 rounded-sm object-contain" />
+                <span>BOT Chain 677</span>
               </span>
             </div>
             <p className="text-xs text-zinc-400 font-normal">
