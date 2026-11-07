@@ -1,16 +1,17 @@
 import { http, createConfig } from "wagmi";
 import { injected } from "wagmi/connectors";
 import { createPublicClient } from "viem";
-import { botchainTestnet } from "./chains";
+import { botchain, botchainTestnet } from "./chains";
 
 export const config = createConfig({
-  chains: [botchainTestnet],
+  chains: [botchain, botchainTestnet],
   connectors: [
     injected({
       target: "metaMask",
     }),
   ],
   transports: {
+    [botchain.id]: http(botchain.rpcUrls.default.http[0]),
     [botchainTestnet.id]: http(botchainTestnet.rpcUrls.default.http[0]),
   },
   ssr: true,
@@ -18,7 +19,6 @@ export const config = createConfig({
 
 // Dedicated standalone public client for looking up warranties even when no wallet is connected
 export const publicClient = createPublicClient({
-  chain: botchainTestnet,
-  transport: http(botchainTestnet.rpcUrls.default.http[0]),
+  chain: botchain,
+  transport: http(botchain.rpcUrls.default.http[0]),
 });
-

@@ -26,7 +26,7 @@ export default function Home() {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-charcoal-900 border border-charcoal-800 text-xs text-zinc-400 mb-4 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
-            <span>Botchain Testnet (Chain ID: 968)</span>
+            <span className="text-brand-green font-medium">Botchain Mainnet (Chain ID: 677)</span>
             <span className="text-zinc-600">•</span>
             <span className="text-brand-purple-light font-medium">Smart Contract v1.0</span>
           </div>
@@ -100,21 +100,21 @@ export default function Home() {
             <ShieldCheck className="w-4 h-4 text-brand-purple-light" />
             <span className="font-medium text-zinc-400">WarrantyGo Protocol</span>
             <span>—</span>
-            <span>Live on Botchain Testnet</span>
+            <span className="text-brand-green">Live on Botchain Mainnet (677)</span>
           </div>
 
           <div className="flex items-center space-x-6 text-zinc-400">
             <a
-              href="https://scan.bohr.life"
+              href="https://scan.botchain.ai"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition flex items-center space-x-1"
             >
-              <span>BohrScan Explorer</span>
+              <span>BotScan Explorer</span>
               <ExternalLink className="w-3 h-3" />
             </a>
             <a
-              href="https://rpc.bohr.life"
+              href="https://rpc.botchain.ai"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition flex items-center space-x-1"

@@ -5,7 +5,7 @@
 ### Slide 1: Cover
 * **Title:** WarrantyGo 🛡️
 * **Subtitle:** Decentralized, Tamper-Proof Warranty Registration & Verification Protocol
-* **Built on:** Botchain (Chain ID: 968)
+* **Built on:** Botchain Mainnet (Chain ID: 677)
 * **Tagline:** *"Your warranty, always within reach."*
 * **Presenter:** WarrantyGo Team ([GitHub](https://github.com/liljhnxn/warrantygo))
 
@@ -50,8 +50,8 @@
 ---
 
 ### Slide 6: Live Traction & Deployment
-* **Live Smart Contract:** [`0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B`](https://scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B#code)
-* **Status:** Verified on BohrScan Block Explorer.
+* **Live Mainnet Contract:** [`0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F`](https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code)
+* **Status:** Verified on BotScan Block Explorer.
 * **Testing:** 15/15 unit tests passing across all registration, retrieval, and access control edge cases.
 * **Open Source Codebase:** [https://github.com/liljhnxn/warrantygo](https://github.com/liljhnxn/warrantygo)
 
@@ -92,3 +92,4 @@
 * **Contact & Links:**
   * **App Repo:** [github.com/liljhnxn/warrantygo](https://github.com/liljhnxn/warrantygo)
   * **Contract:** [scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B](https://scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B)
+

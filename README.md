@@ -32,12 +32,20 @@ WarrantyGo is a lightweight, tamper-proof Web3 application built for electronics
 
 ## 🌐 Blockchain Network Details
 
+### Mainnet (Primary)
+* **Network Name:** Botchain Mainnet
+* **Chain ID:** `677`
+* **Currency Symbol:** `BOT`
+* **RPC URL:** `https://rpc.botchain.ai`
+* **Block Explorer:** `https://scan.botchain.ai`
+* **Contract Address (Verified):** [`0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F`](https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code)
+
+### Testnet
 * **Network Name:** Botchain Testnet
 * **Chain ID:** `968`
-* **Currency Symbol:** `BOT`
 * **RPC URL:** `https://rpc.bohr.life`
 * **Block Explorer:** `https://scan.bohr.life`
-* **Faucet:** `https://faucet.botchain.ai`
+* **Contract Address (Verified):** [`0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B`](https://scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B#code)
 
 ---
 
@@ -99,13 +107,13 @@ cp .env.example .env.local
 Edit `.env.local` to configure your environment:
 
 ```env
-# Botchain Testnet RPC
-BOTCHAIN_RPC_URL="https://rpc.bohr.life"
-BOTCHAIN_EXPLORER_URL="https://scan.bohr.life"
-NEXT_PUBLIC_CHAIN_ID="968"
+# Botchain Mainnet
+BOTCHAIN_MAINNET_RPC="https://rpc.botchain.ai"
+BOTCHAIN_EXPLORER_URL="https://scan.botchain.ai"
+NEXT_PUBLIC_CHAIN_ID="677"
 
-# Deployed WarrantyGo Contract Address
-NEXT_PUBLIC_WARRANTY_CONTRACT_ADDRESS="0x1B86b1129b0a11F0766287cE763B1995E052827B"
+# Deployed WarrantyGo Contract Address (Mainnet)
+NEXT_PUBLIC_WARRANTY_CONTRACT_ADDRESS="0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F"
 
 # Deployer Private Key for Hardhat (Keep safe, never commit to git!)
 PRIVATE_KEY="your_private_key_here"

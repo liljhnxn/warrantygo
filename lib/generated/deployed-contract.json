@@ -1,9 +1,8 @@
 {
-  "contractAddress": "0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B",
-  "chainId": 968,
-  "networkName": "botchain",
-  "deploymentTx": "0x6a9161d2b2bd2163b269014a0157c9e03d537a22a3931b8fddfebbb32045d373",
-  "explorerUrl": "https://scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B",
-  "deployedAt": "2026-11-02T10:14:46Z"
+  "contractAddress": "0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F",
+  "chainId": 677,
+  "networkName": "botchainMainnet",
+  "explorerUrl": "https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F",
+  "deploymentTx": "0x5fd3cb0cb74f7bd9a5cb28a8a6aa9f3cc4e388580b6ff5aac554428f5378dff3",
+  "deployedAt": "2026-11-07T05:19:22.175Z"
 }
-

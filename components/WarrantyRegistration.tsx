@@ -187,10 +187,10 @@ export function WarrantyRegistration({ onSuccessRegistered }: WarrantyRegistrati
             <div className="bg-charcoal-900/80 p-4 rounded-xl border border-charcoal-750">
               <div className="flex items-center space-x-2 text-xs text-zinc-400 mb-1">
                 <ExternalLink className="w-4 h-4 text-brand-purple-light" />
-                <span>BohrScan Explorer</span>
+                <span>BotScan Explorer</span>
               </div>
               <a
-                href={`https://scan.bohr.life/tx/${registeredResult.txHash}`}
+                href={`https://scan.botchain.ai/tx/${registeredResult.txHash}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs font-mono text-brand-purple-light hover:underline flex items-center space-x-1.5 truncate"

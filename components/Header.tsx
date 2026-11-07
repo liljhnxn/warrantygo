@@ -1,7 +1,7 @@
 "use client";
 
 import { useAccount, useConnect, useDisconnect, useSwitchChain } from "wagmi";
-import { botchainTestnet } from "@/lib/chains";
+import { botchain } from "@/lib/chains";
 import { formatAddress } from "@/lib/contract";
 import { ShieldCheck, Wallet, LogOut, AlertTriangle, ExternalLink } from "lucide-react";
 import { useState } from "react";
@@ -13,7 +13,7 @@ export function Header() {
   const { switchChain, isPending: isSwitching } = useSwitchChain();
   const [copied, setCopied] = useState(false);
 
-  const isWrongNetwork = isConnected && chain?.id !== botchainTestnet.id;
+  const isWrongNetwork = isConnected && chain?.id !== botchain.id;
 
   const copyAddress = () => {
     if (!address) return;
@@ -45,8 +45,8 @@ export function Header() {
               <span className="text-xl font-bold tracking-tight text-zinc-100">
                 Warranty<span className="text-brand-purple-light">Go</span>
               </span>
-              <span className="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full bg-charcoal-800 text-zinc-400 border border-charcoal-700">
-                Botchain 968
+              <span className="text-[10px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full bg-charcoal-800 text-brand-green border border-brand-green/30">
+                Botchain 677
               </span>
             </div>
             <p className="text-xs text-zinc-400 font-normal">
@@ -59,12 +59,12 @@ export function Header() {
         <div className="flex items-center space-x-3">
           {isConnected && isWrongNetwork && (
             <button
-              onClick={() => switchChain({ chainId: botchainTestnet.id })}
+              onClick={() => switchChain({ chainId: botchain.id })}
               disabled={isSwitching}
               className="flex items-center space-x-2 text-xs font-medium px-3 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 transition-all"
             >
               <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
-              <span>{isSwitching ? "Switching..." : "Switch to Botchain"}</span>
+              <span>{isSwitching ? "Switching..." : "Switch to Botchain Mainnet"}</span>
             </button>
           )}
 
@@ -82,10 +82,10 @@ export function Header() {
               </div>
 
               <a
-                href={`https://scan.bohr.life/address/${address}`}
+                href={`https://scan.botchain.ai/address/${address}`}
                 target="_blank"
                 rel="noreferrer"
-                title="View on BohrScan Explorer"
+                title="View on BotScan Explorer"
                 className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-charcoal-750 transition"
               >
                 <ExternalLink className="w-3.5 h-3.5" />

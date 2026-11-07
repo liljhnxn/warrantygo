@@ -2,9 +2,9 @@
 **A Decentralized, Tamper-Proof On-Chain Warranty Registry & Verification Protocol**
 
 *Version 1.0 — November 2026*  
-*Target Network: Botchain (Chain ID: 968)*  
-*Smart Contract Address:* `0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B`  
-*Explorer:* [BohrScan Contract](https://scan.bohr.life/address/0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B#code)  
+*Target Network: Botchain Mainnet (Chain ID: 677)*  
+*Smart Contract Address:* `0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F`  
+*Explorer:* [BotScan Contract](https://scan.botchain.ai/address/0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F#code)  
 
 ---
 
@@ -135,3 +135,4 @@ Botchain provides the ideal high-throughput, low-latency trust rail for Warranty
 ## 8. Conclusion
 
 WarrantyGo demonstrates how decentralized ledger technology directly solves tangible retail pain points. By eliminating paper waste, preventing warranty fraud, and prioritizing customer privacy, WarrantyGo establishes a new benchmark for post-purchase trust and transparency.
+

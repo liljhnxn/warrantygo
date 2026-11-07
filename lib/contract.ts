@@ -133,7 +133,7 @@ export interface WarrantyRecord {
 
 export const DEFAULT_CONTRACT_ADDRESS: Address =
   (process.env.NEXT_PUBLIC_WARRANTY_CONTRACT_ADDRESS as Address) ||
-  "0x94C031c1e7D0243bb0dC68a80B8b37EBA46AB29B";
+  "0x11F0528d8E7dc0b094F01eC693a1F22CF296D56F";
 
 export function formatAddress(address?: string): string {
   if (!address) return "";
